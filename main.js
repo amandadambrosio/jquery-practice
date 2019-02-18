@@ -1,6 +1,6 @@
 $(document).ready(function () { //checks if html is fully loaded
 	$('#btn-img-1').prop('disabled', true); //on first page view, the button for the visible img has to be disabled
-	$('.my-button').on("click", function, (e) { //when a button with class .my-button is clicked
+	$('.my-button').on("click", function (e) { //when a button with class .my-button is clicked
 		e.preventDefault(); //have to add this so we don't get weird behavior in older browsers (or IE)
 		$('.my-button').prop('disabled', false); //enable ALL buttons so NONE are disabled
 		$(this).prop('disabled', true); //disable ONLY the button that was clicked - "this" button that was clicked
